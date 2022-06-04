@@ -1,0 +1,70 @@
+.header {
+  position: relative;
+  min-height: 39.375rem; // 630px
+
+  &__invert-filter {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include media('>=medium') {
+    min-height: 43.75rem; // 700px
+  }
+
+  @include media('>=large') {
+    height: 50rem; // 800px
+    width: min(79.6875rem, 100%);
+
+    background-image: url(../assets/desktop/image-hero.jpg);
+    background-position: left 28.125rem center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__invert-filter {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 28.125rem;
+      filter: invert(1);
+      background-color: $color-almost-black--inverted;
+      overflow: hidden;
+    }
+
+    &__container {
+      padding-top: 11.875rem;
+      width: min(79.6875rem, 100%);
+    }
+
+    &__heading {
+      margin-left: 10.3125rem;
+      color: $color-almost-black;
+
+      &--invert {
+        margin-top: 11.875rem;
+        width: max-content;
+      }
+    }
+
+    &__paragraph {
+      max-width: 21.875rem;
+      margin-bottom: 4rem;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      transform: translateX(-100%);
+      background-color: $color-almost-black;
+    }
+  }
+}
