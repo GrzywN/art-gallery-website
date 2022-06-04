@@ -1,5 +1,81 @@
 .button {
-  max-width: 16.25rem;
+  cursor: pointer;
+
   width: 100%;
-  //   height: 4.5rem;
+  max-width: 16.25rem;
+  height: 4.5rem;
+
+  display: flex;
+
+  overflow: hidden;
+
+  &__text {
+    position: relative;
+
+    width: 12.75rem;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+
+      transform: scaleY(0) translateX(100%);
+
+      display: grid;
+      place-items: center;
+
+      @extend %transition;
+
+      transition-delay: $transition-delay;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+
+    width: 3.5rem;
+    height: 100%;
+
+    background-image: url(../assets/icon-arrow-left.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0.5rem 1.5rem;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+
+      transform: scaleY(0) translateX(100%);
+
+      @extend %transition;
+    }
+  }
+
+  &:hover .button__text:after,
+  &:hover .button__arrow:after {
+    transform: scaleY(1);
+  }
+
+  &--header {
+    flex-direction: row-reverse;
+
+    .button__text:after {
+      content: 'Our location';
+    }
+
+    .button__arrow {
+      transform: rotate(180deg);
+    }
+  }
 }

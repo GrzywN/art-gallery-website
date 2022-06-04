@@ -1,0 +1,34 @@
+.header {
+  &__invert-filter {
+    filter: invert(1);
+    background-color: $color-almost-black--inverted;
+  }
+
+  &__heading {
+    color: $color-almost-black;
+  }
+
+  &:before {
+    background-color: $color-almost-black;
+  }
+}
+
+.button {
+  &__arrow {
+    background-color: $color-gold;
+
+    &::after {
+      background: inherit;
+      background-color: $color-almost-black;
+    }
+  }
+
+  &__text {
+    background-color: $color-almost-black;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-gold;
+    }
+  }
+}

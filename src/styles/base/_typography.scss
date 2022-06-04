@@ -48,3 +48,13 @@ p {
     line-height: 2rem;
   }
 }
+
+button {
+  font-family: $font-cursive;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.2275rem;
+}

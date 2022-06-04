@@ -1,4 +1,8 @@
-$transition-default: 200ms ease;
+$transition-duration: 200ms;
+$transition-timing-function: ease;
+$transition-delay: calc($transition-duration / 2);
+
+$transition-default: $transition-duration $transition-timing-function;
 
 %transition {
   transition: $transition-default;
