@@ -3,6 +3,8 @@
 
   min-height: 39.375rem;
 
+  background-repeat: no-repeat;
+
   &__invert-filter {
     display: none;
   }
@@ -11,8 +13,30 @@
     display: flex;
   }
 
-  @include media('>=medium') {
+  @include media('>=medium', '<large') {
     min-height: 43.75rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: url(../assets/tablet/image-hero.jpg);
+    background-size: contain;
+
+    &__container {
+      width: min(21.1875rem, 100%);
+      min-height: 25.625rem;
+
+      flex-direction: column;
+      justify-content: space-between;
+
+      margin-right: 2.5rem;
+    }
+
+    &__paragraph {
+      margin-bottom: 3rem;
+    }
   }
 
   @include media('>=large') {
