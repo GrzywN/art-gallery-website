@@ -1,8 +1,6 @@
 .header {
   position: relative;
 
-  min-height: 39.375rem;
-
   background-repeat: no-repeat;
 
   &__invert-filter {
@@ -11,6 +9,45 @@
 
   &__container {
     display: flex;
+  }
+
+  @include media('<medium') {
+    min-height: 39.375rem;
+    width: 100%;
+
+    &__container {
+      &::before {
+        content: '';
+        background-image: url('../assets/mobile/image-hero.jpg');
+        background-size: cover;
+
+        width: 100%;
+        aspect-ratio: calc(375 / 240);
+      }
+
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__heading {
+      margin-top: 2rem;
+    }
+
+    &__paragraph {
+      margin-bottom: 2rem;
+    }
+
+    &__heading,
+    &__subcontainer {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @include media('>31.25rem', '<medium') {
+    &__heading br {
+      display: none;
+    }
   }
 
   @include media('>=medium', '<large') {
