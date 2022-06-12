@@ -25,6 +25,9 @@ $breakpoints: (
 ///		)
 ///	);
 ///
+
+@use 'sass:math';
+
 $media-expressions: (
   'screen': 'screen',
   'print': 'print',
@@ -301,7 +304,7 @@ $unit-intervals: (
       } @else {
         // Move the decimal dot to the left
         $divider: $divider * 10;
-        $number: $number / $divider;
+        $number: math.div($number, $divider);
       }
 
       $result: $result + $number;

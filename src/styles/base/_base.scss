@@ -1,10 +1,21 @@
 *,
 :before,
 :after {
-  // border: 1px dashed green;
+  border: 1px dashed green;
 }
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  @include media('>=large') {
+    width: 100%;
+    padding-top: 11.25rem;
+    padding-right: 10.25rem;
+    padding-bottom: 11.25rem;
+    padding-left: 10.3125rem;
+  }
 }

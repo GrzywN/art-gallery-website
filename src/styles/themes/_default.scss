@@ -32,3 +32,22 @@
     }
   }
 }
+
+.grid {
+  &__heading {
+    color: $color-almost-black;
+  }
+
+  &__paragraph {
+    color: $color-dark-grey;
+  }
+
+  &__item--come-and-be {
+    background-color: $color-almost-black;
+
+    .grid__heading,
+    .grid__paragraph {
+      color: $color-white;
+    }
+  }
+}
