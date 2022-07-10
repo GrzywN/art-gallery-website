@@ -1,7 +1,7 @@
 *,
 :before,
 :after {
-  // border: 1px dashed green;
+  // outline: 1px dashed green;
 }
 
 body {
@@ -17,9 +17,15 @@ header {
 
 main {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   width: 100%;
+
+  @include media('<medium') {
+    padding-top: 7.5rem;
+    padding-right: 1rem;
+    padding-bottom: 7.5rem;
+    padding-left: 1rem;
+  }
 
   @include media('>=medium', '<large') {
     padding-top: 7.5rem;

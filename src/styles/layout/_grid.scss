@@ -2,12 +2,52 @@
   width: 100%;
 
   @include media('<medium') {
-    &__image {
+    display: grid;
+    gap: 1rem;
+
+    &__item {
       &--your-day {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 1.5625rem;
+        flex-direction: column-reverse;
+
+        margin-bottom: 2rem;
+
+        .grid__item-body {
+          display: grid;
+          gap: 1.3125rem;
+        }
+      }
+
+      &--come-and-be {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .grid__heading {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    &__image {
+      object-fit: cover;
+
+      height: auto;
+      width: 100%;
+
+      &--your-day {
+        content: url('../assets/mobile/image-grid-1.jpg');
       }
       &--big-image {
+        content: url('../assets/mobile/image-grid-2.jpg');
       }
       &--small-image {
+        content: url('../assets/mobile/image-grid-3.jpg');
       }
     }
   }
@@ -38,8 +78,7 @@
           display: grid;
           gap: 1.5rem;
 
-          width: min(223px, 100%);
-          // min-height: 18.6875rem;
+          width: min(13.9375rem, 100%);
         }
       }
 
