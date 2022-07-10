@@ -1,7 +1,7 @@
 *,
 :before,
 :after {
-  border: 1px dashed green;
+  // border: 1px dashed green;
 }
 
 body {
@@ -10,9 +10,25 @@ body {
   justify-content: space-between;
 }
 
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+
+  @include media('>=medium', '<large') {
+    padding-top: 7.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 7.5rem;
+    padding-left: 2.5rem;
+  }
+
   @include media('>=large') {
-    width: 100%;
     padding-top: 11.25rem;
     padding-right: 10.25rem;
     padding-bottom: 11.25rem;
