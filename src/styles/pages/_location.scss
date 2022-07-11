@@ -4,14 +4,23 @@ body.location-page {
 
     @include media('<medium') {
       min-height: 30.8125rem;
+
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     @include media('>=medium', '<large') {
       min-height: 27.25rem;
+
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
 
     @include media('>=large') {
       min-height: 34.25rem;
+
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
   }
 }

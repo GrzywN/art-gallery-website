@@ -1,0 +1,14 @@
+.back-to-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  @include media('>=medium', '<large') {
+    transform: translateX(2.4375rem);
+  }
+
+  @include media('>=large') {
+    transform: translateX(9.75rem);
+  }
+}
