@@ -6,14 +6,23 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GrzywN/art-gallery-website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "modern",
+    "art",
+    "gallery",
+    "website",
+    "frontend",
+    "mentor",
+    "frontendmentor"
+  ],
+  "author": "Karol Binkowski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GrzywN/art-gallery-website/issues"

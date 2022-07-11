@@ -2,7 +2,25 @@
   width: 100%;
   height: 34.375rem;
 
+  background-position: center center;
+
+  @include media('<medium') {
+    &:not(.leaflet-container) {
+      background-image: url('../assets/mobile/image-map.png');
+    }
+  }
+
   @include media('>=medium') {
     height: 37.5rem;
+
+    &:not(.leaflet-container) {
+      background-image: url('../assets/tablet/image-map.png');
+    }
+  }
+
+  @include media('>=large') {
+    &:not(.leaflet-container) {
+      background-image: url('../assets/desktop/image-map.png');
+    }
   }
 }

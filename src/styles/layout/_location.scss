@@ -3,8 +3,6 @@
   justify-content: space-between;
 
   @include media('<medium') {
-    // padding-left: 1rem;
-    // padding-right: 1rem;
     padding-top: 3rem;
     padding-bottom: 3.5rem;
 
@@ -29,8 +27,6 @@
   }
 
   @include media('>=medium', '<large') {
-    // padding-left: 2.5rem;
-    // padding-right: 2.5rem;
     padding-top: 5.5rem;
     padding-bottom: 5rem;
 

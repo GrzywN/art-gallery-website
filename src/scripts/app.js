@@ -6,10 +6,9 @@ const icon = new L.Icon({
   iconAnchor: [33, 88],
 });
 
-const map = L.map('map').setView(coordinates, 16);
+const map = L.map('map', { zoomControl: false }).setView(coordinates, 16);
 const tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
-  attribution: '© OpenStreetMap',
 });
 const marker = L.marker(coordinates, { icon: icon });
 
