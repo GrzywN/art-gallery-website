@@ -1,0 +1,17 @@
+body.location-page {
+  main {
+    width: 100%;
+
+    @include media('<medium') {
+      min-height: 30.8125rem;
+    }
+
+    @include media('>=medium', '<large') {
+      min-height: 27.25rem;
+    }
+
+    @include media('>=large') {
+      min-height: 34.25rem;
+    }
+  }
+}

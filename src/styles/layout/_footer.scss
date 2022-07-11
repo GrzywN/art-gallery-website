@@ -15,6 +15,10 @@
     gap: 2.375rem;
   }
 
+  &__logo {
+    height: max-content;
+  }
+
   &__socials {
     list-style: none;
 
@@ -23,6 +27,9 @@
   }
 
   &__socials-image {
+    width: 1.25rem;
+    height: max-content;
+
     &:hover {
       transform: scale(2);
     }
@@ -42,12 +49,6 @@
 
     &__logo {
       width: 6.875rem;
-      height: min-content;
-    }
-
-    &__socials-image {
-      width: 1.25rem;
-      height: min-content;
     }
 
     &__paragraph {
@@ -68,7 +69,6 @@
 
     &__logo {
       width: 10rem;
-      height: min-content;
     }
 
     &__paragraph {

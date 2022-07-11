@@ -1,3 +1,11 @@
+body.home-page {
+  background-color: $color-white;
+}
+
+body.location-page {
+  background-color: $color-almost-black;
+}
+
 .header {
   &__invert-filter {
     filter: invert(1);
@@ -52,7 +60,27 @@
   }
 }
 
-.footer--dark {
+.location {
   background-color: $color-almost-black;
   color: $color-white;
+
+  &__address-heading {
+    color: $color-gold;
+  }
+}
+
+.footer {
+  &--dark {
+    background-color: $color-almost-black;
+    color: $color-white;
+  }
+  &--gold {
+    background-color: $color-gold;
+    color: $color-almost-black;
+
+    .footer__logo,
+    .footer__socials-image {
+      filter: brightness(0);
+    }
+  }
 }

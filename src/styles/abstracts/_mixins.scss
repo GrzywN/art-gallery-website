@@ -14,6 +14,5 @@
 }
 
 @mixin container-width {
-  width: 100%;
-  // max-width: 69.125rem;
+  width: min(100%, 69.375rem);
 }
