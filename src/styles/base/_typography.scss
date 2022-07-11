@@ -75,7 +75,9 @@ p small {
   }
 }
 
-button {
+a.button {
+  text-decoration: none;
+
   font-family: $font-cursive;
   text-transform: uppercase;
   text-align: center;

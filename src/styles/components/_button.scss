@@ -78,4 +78,16 @@
       transform: rotate(180deg);
     }
   }
+
+  &--back-to-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(9.75rem);
+    z-index: 9999;
+
+    .button__text:after {
+      content: 'Back to home';
+    }
+  }
 }

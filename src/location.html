@@ -6,13 +6,22 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
     <title>Frontend Mentor | Art gallery website</title>
-
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="styles/main.scss" />
-    <script src="scripts/app.ts" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="map" id="map"></header>
+    <nav>
+      <a href="index.html" class="button button--back-to-home">
+        <span class="button__arrow"></span>
+        <span class="button__text">Back to Home</span>
+      </a>
+    </nav>
+    <script src="../node_modules/leaflet/dist/leaflet-src.js"></script>
+    <script src="scripts/app.js" type="module"></script>
+  </body>
 </html>
-<!-- Back to Home
+<!-- 
 
   Our location
 
